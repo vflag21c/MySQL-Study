@@ -1,4 +1,4 @@
-### 강의 링크
+### 문제 링크
 [Leetcode 184. Department Highest Salary](https://leetcode.com/problems/department-highest-salary/)
 
 풀이

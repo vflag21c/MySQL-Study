@@ -1,4 +1,4 @@
-### 강의 링크
+### 문제 링크
 [LeetCode 185. Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/description/)
 
 풀이
