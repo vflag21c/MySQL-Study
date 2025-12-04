@@ -15,3 +15,17 @@ FROM Employee M
 ) SUB ON ( M.name = SUB.Ename)
 WHERE SUB.MaxSalary = M.Salary
 ```
+
+
+```sql
+select tot.dname as Department , tot.ename as Employee , tot.salary as Salary 
+  from (
+SELECT DENSE_RANK() OVER(PARTITION BY D.id order by E.salary desc) as rnk, D.name as dname, E.name as ename, E.salary, 
+       E.id as eid
+  FROM Employee E
+  JOIN Department D
+    ON E.departmentId = D.id
+  ) tot 
+where tot.rnk = 1
+ order by eid
+```
